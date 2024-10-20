@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "396693786791",
+    "project_id": "credence-534c2",
+    "storage_bucket": "credence-534c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396693786791:android:b6c059c8965edf8fa84b82",
+        "android_client_info": {
+          "package_name": "com.example.credence"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA6zEf_lTkcX_MEgy5T_Wp_29HVFb8IBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

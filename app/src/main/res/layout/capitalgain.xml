@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_capital_gains"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/newbackgrond_main"
+    tools:context=".Activities.CapitalGainsActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="500dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="CAPITAL GAINS TAX"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/crad_logo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bottom_arc" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_arc" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/pink_layout">
+
+            <TextView
+                android:id="@+id/labelCapitalGains"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="Enter Capital Gains"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/capitalGainsInput"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/background_button_white"
+                android:gravity="center"
+                android:hint="Capital Gains"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:textSize="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/labelCapitalGains" />
+
+            <Button
+                android:id="@+id/calculateCapitalGainsButton"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bluenew_background"
+                android:text="Calculate Tax"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/capitalGainsInput" />
+
+            <TextView
+                android:id="@+id/labelCapitalGainsTax"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="250dp"
+                android:gravity="center"
+                android:text="Capital Gains Tax"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/capitalGainsTaxOutput"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/background_button_white"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/calculateCapitalGainsButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Credence"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Activities.CurrencyCov"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activities.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FinancialToDoList"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.IncomeTaxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TaxCalculator"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.PropertyTaxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CapitalGainsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CreateAccountActivity"
+            android:exported="false"
+            android:parentActivityName=".Activities.LoginSignupPage" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false"
+            android:parentActivityName=".Activities.LoginSignupPage" />
+        <activity
+            android:name=".Activities.LoginConfirmationPage"
+            android:exported="false"
+            android:parentActivityName=".Activities.LoginActivity" />
+        <activity
+            android:name=".Activities.CreateAccConfimPage"
+            android:exported="false"
+            android:parentActivityName=".Activities.CreateAccountActivity" />
+        <activity
+            android:name=".Activities.GoalRecPage"
+            android:exported="false"
+            android:parentActivityName=".Activities.LoginConfirmationPage" />
+        <activity
+            android:name=".Activities.ForgotPasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".Activities.LoginActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Activities.LoginSignupPage"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddExpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddIncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Logbook"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

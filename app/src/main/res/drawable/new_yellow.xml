@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#f3ff00"
+                android:centerColor="#f0bd1e"
+                android:endColor="#ff00fb"
+                android:angle="-90" />
+
+            <!-- Apply radius only to the bottom corners -->
+            <corners
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp"
+                android:bottomLeftRadius="50dp"
+                android:bottomRightRadius="50dp" />
+        </shape>
+    </item>
+</selector>

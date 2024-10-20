@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main3_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/purplenew_background"
+    android:visibility="visible"
+    tools:context=".Activities.LoginConfirmationPage">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bottom_arc" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="190dp"
+        android:text="CONGRATULATIONS!"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginBottom="-150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/top_arc" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/success" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="-170dp"
+            android:layout_marginBottom="100dp"
+            app:srcCompat="@drawable/crad_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/chandu_background"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="8dp"
+
+                    android:textSize="20sp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2.5"
+                    android:shadowDy="2.3"
+                    android:shadowRadius="2.6"
+                    android:text="You have Successfully Logged In CREDENCE!"
+                    android:textColor="@color/white"
+                    />
+
+
+                <Button
+                    android:id="@+id/Cont2"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bluenew_background"
+                    android:clickable="true"
+                    android:fontFamily="@font/agbalumo"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2.0"
+                    android:shadowDy="1.8"
+                    android:shadowRadius="2.0"
+                    android:text="Continue"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/purplenew_background"
+            android:visibility="visible">
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

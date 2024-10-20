@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abel</item>
+        <item>@font/aclonica</item>
+        <item>@font/actor</item>
+        <item>@font/agbalumo</item>
+        <item>@font/aldrich</item>
+        <item>@font/alex_brush</item>
+        <item>@font/bellota_light</item>
+        <item>@font/bellota_text</item>
+        <item>@font/bellota_text_bold</item>
+        <item>@font/league_spartan_thin</item>
+    </array>
+</resources>
