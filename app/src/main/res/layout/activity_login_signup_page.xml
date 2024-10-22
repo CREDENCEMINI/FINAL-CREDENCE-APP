@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/profilename"
             android:layout_width="388dp"
             android:layout_height="78dp"
             android:layout_marginStart="120dp"
