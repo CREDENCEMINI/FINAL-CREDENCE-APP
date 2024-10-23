@@ -49,6 +49,9 @@ public class ExpenseAdapter extends RecyclerView.Adapter<ExpenseAdapter.MyViewHo
         holder.note.setText(expenseModel.getExpense_note());
         holder.category.setText(expenseModel.getExpense_category());
         holder.amount.setText(String.valueOf(expenseModel.getExpense_amount()));
+        holder.type.setText(expenseModel.getType());
+        holder.date.setText(expenseModel.getTime());
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,12 +67,13 @@ public class ExpenseAdapter extends RecyclerView.Adapter<ExpenseAdapter.MyViewHo
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-        private TextView note, category, amount, date;
+        private TextView note, category, amount, date, type;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             note = itemView.findViewById(R.id.note);
             category = itemView.findViewById(R.id.category);
             amount = itemView.findViewById(R.id.amount);
+            type = itemView.findViewById(R.id.type);
             date = itemView.findViewById(R.id.date);
         }
     }

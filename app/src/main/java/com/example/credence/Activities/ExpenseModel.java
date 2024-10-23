@@ -7,14 +7,14 @@ public class ExpenseModel implements Serializable {
     private String expense_note;
     private String expense_category;
     private long expense_amount;
-    private long time;
+    private String time; // Change time to String
     private String type;
     private String uid;
 
-    ExpenseModel(){
+    ExpenseModel() {
     }
 
-    public ExpenseModel(String expenseId, String expense_note, String expense_category, long expense_amount, long time, String type, String uid) {
+    public ExpenseModel(String expenseId, String expense_note, String expense_category, long expense_amount, String time, String type, String uid) {
         this.expenseId = expenseId;
         this.expense_note = expense_note;
         this.expense_category = expense_category;
@@ -56,11 +56,11 @@ public class ExpenseModel implements Serializable {
         this.expense_amount = expense_amount;
     }
 
-    public long getTime() {
+    public String getTime() { // Change getter for time
         return time;
     }
 
-    public void setTime(long time) {
+    public void setTime(String time) { // Change setter for time
         this.time = time;
     }
 
