@@ -89,8 +89,8 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/save_button_expense"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_height="47dp"
                 android:layout_marginStart="150dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="150dp"
