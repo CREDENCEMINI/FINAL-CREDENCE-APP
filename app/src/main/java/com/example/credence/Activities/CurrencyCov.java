@@ -92,35 +92,35 @@ public class CurrencyCov extends AppCompatActivity {
         try {
             // Conversion logic
             if (fromUnit.equalsIgnoreCase("INR") && toUnit.equalsIgnoreCase("USD")) {
-                toValue = fromValue / 83.96;
+                toValue = fromValue / 84.06;
             } else if (fromUnit.equalsIgnoreCase("USD") && toUnit.equalsIgnoreCase("INR")) {
-                toValue = fromValue * 83.96;
+                toValue = fromValue * 84.06;
             }
             if (fromUnit.equalsIgnoreCase("INR") && toUnit.equalsIgnoreCase("JPY")) {
-                toValue = fromValue / 0.59;
+                toValue = fromValue / 0.56;
             } else if (fromUnit.equalsIgnoreCase("JPY") && toUnit.equalsIgnoreCase("INR")) {
-                toValue = fromValue * 0.59;
+                toValue = fromValue * 0.56;
             }
             if (fromUnit.equalsIgnoreCase("INR") && toUnit.equalsIgnoreCase("CAD")) {
-                toValue = fromValue / 61.69;
+                toValue = fromValue / 60.49;
             } else if (fromUnit.equalsIgnoreCase("CAD") && toUnit.equalsIgnoreCase("INR")) {
-                toValue = fromValue * 61.69;
+                toValue = fromValue * 60.49;
             }
             if(fromUnit.equalsIgnoreCase("INR")&& toUnit.equalsIgnoreCase("AUD"))
             {
-                toValue=fromValue/56.24;
+                toValue=fromValue/55.48;
 
             } else if (fromUnit.equalsIgnoreCase("AUD")&& toUnit.equalsIgnoreCase("INR"))
             {
-                toValue=fromValue*56.24;
+                toValue=fromValue*55.48;
             }
             if(fromUnit.equalsIgnoreCase("INR")&& toUnit.equalsIgnoreCase("SGD"))
             {
-                toValue=fromValue/64.60;
+                toValue=fromValue/63.60;
 
             } else if (fromUnit.equalsIgnoreCase("SGD")&& toUnit.equalsIgnoreCase("INR"))
             {
-                toValue=fromValue*64.60;
+                toValue=fromValue*63.60;
             }
             if(fromUnit.equalsIgnoreCase("INR")&& toUnit.equalsIgnoreCase("HKD"))
             {
@@ -140,52 +140,52 @@ public class CurrencyCov extends AppCompatActivity {
             }/////////////////////
             if(fromUnit.equalsIgnoreCase("JPY")&& toUnit.equalsIgnoreCase("USD"))
             {
-                toValue=fromValue/144.19;
+                toValue=fromValue/152.99;
 
             } else if (fromUnit.equalsIgnoreCase("USD")&& toUnit.equalsIgnoreCase("JPY"))
             {
-                toValue=fromValue*144.19;
+                toValue=fromValue*152.99;
             }
             if(fromUnit.equalsIgnoreCase("JPY")&& toUnit.equalsIgnoreCase("INR"))
             {
-                toValue=fromValue/1.72;
+                toValue=fromValue/1.82;
 
             } else if (fromUnit.equalsIgnoreCase("INR")&& toUnit.equalsIgnoreCase("JPY"))
             {
-                toValue=fromValue*1.72;
+                toValue=fromValue*1.82;
             }
 
             if(fromUnit.equalsIgnoreCase("JPY")&& toUnit.equalsIgnoreCase("CAD"))
             {
-                toValue=fromValue/106.33;
+                toValue=fromValue/110.03;
 
             } else if (fromUnit.equalsIgnoreCase("CAD")&& toUnit.equalsIgnoreCase("JPY"))
             {
-                toValue=fromValue*106.33;
+                toValue=fromValue*110.03;
             }
             if(fromUnit.equalsIgnoreCase("JPY")&& toUnit.equalsIgnoreCase("AUD"))
             {
-                toValue=fromValue/98.42;
+                toValue=fromValue/100.99;
 
             } else if (fromUnit.equalsIgnoreCase("AUD")&& toUnit.equalsIgnoreCase("JPY"))
             {
-                toValue=fromValue*98.42;
+                toValue=fromValue*100.99;
             }
             if(fromUnit.equalsIgnoreCase("JPY")&& toUnit.equalsIgnoreCase("SGD"))
             {
-                toValue=fromValue/111.43;
+                toValue=fromValue/115.43;
 
             } else if (fromUnit.equalsIgnoreCase("SGD")&& toUnit.equalsIgnoreCase("JPY"))
             {
-                toValue=fromValue*111.43;
+                toValue=fromValue*115.43;
             }
             if(fromUnit.equalsIgnoreCase("JPY")&& toUnit.equalsIgnoreCase("HKD"))
             {
-                toValue=fromValue/18.48;
+                toValue=fromValue/19.68;
 
             } else if (fromUnit.equalsIgnoreCase("HKD")&& toUnit.equalsIgnoreCase("JPY"))
             {
-                toValue=fromValue*18.48;
+                toValue=fromValue*19.68;
             }////////////
             if(fromUnit.equalsIgnoreCase("CAD")&& toUnit.equalsIgnoreCase("USD"))
             {
@@ -206,11 +206,11 @@ public class CurrencyCov extends AppCompatActivity {
 
             if(fromUnit.equalsIgnoreCase("CAD")&& toUnit.equalsIgnoreCase("JPY"))
             {
-                toValue=fromValue/0.0094;
+                toValue=fromValue/0.0092;
 
             } else if (fromUnit.equalsIgnoreCase("JPY")&& toUnit.equalsIgnoreCase("CAD"))
             {
-                toValue=fromValue*0.0094;
+                toValue=fromValue*0.0092;
             }
             if(fromUnit.equalsIgnoreCase("CAD")&& toUnit.equalsIgnoreCase("AUD"))
             {
@@ -238,11 +238,11 @@ public class CurrencyCov extends AppCompatActivity {
             }//////////////
             if(fromUnit.equalsIgnoreCase("AUD")&& toUnit.equalsIgnoreCase("USD"))
             {
-                toValue=fromValue/1.46;
+                toValue=fromValue/1.52;
 
             } else if (fromUnit.equalsIgnoreCase("USD")&& toUnit.equalsIgnoreCase("AUD"))
             {
-                toValue=fromValue*1.46;
+                toValue=fromValue*1.52;
             }
             if(fromUnit.equalsIgnoreCase("AUD")&& toUnit.equalsIgnoreCase("INR"))
             {
@@ -263,11 +263,11 @@ public class CurrencyCov extends AppCompatActivity {
             }
             if(fromUnit.equalsIgnoreCase("AUD")&& toUnit.equalsIgnoreCase("JPY"))
             {
-                toValue=fromValue/0.010;
+                toValue=fromValue/0.0099;
 
             } else if (fromUnit.equalsIgnoreCase("JPY")&& toUnit.equalsIgnoreCase("AUD"))
             {
-                toValue=fromValue*0.010;
+                toValue=fromValue*0.0099;
             }
             if(fromUnit.equalsIgnoreCase("AUD")&& toUnit.equalsIgnoreCase("SGD"))
             {
@@ -287,11 +287,11 @@ public class CurrencyCov extends AppCompatActivity {
             }/////////////
             if(fromUnit.equalsIgnoreCase("SGD")&& toUnit.equalsIgnoreCase("USD"))
             {
-                toValue=fromValue/1.29;
+                toValue=fromValue/1.32;
 
             } else if (fromUnit.equalsIgnoreCase("USD")&& toUnit.equalsIgnoreCase("SGD"))
             {
-                toValue=fromValue*1.29;
+                toValue=fromValue*1.32;
             }
             if(fromUnit.equalsIgnoreCase("SGD")&& toUnit.equalsIgnoreCase("INR"))
             {
@@ -353,27 +353,27 @@ public class CurrencyCov extends AppCompatActivity {
 
             if(fromUnit.equalsIgnoreCase("HKD")&& toUnit.equalsIgnoreCase("CAD"))
             {
-                toValue=fromValue/5.06;
+                toValue=fromValue/5.59;
 
             } else if (fromUnit.equalsIgnoreCase("CAD")&& toUnit.equalsIgnoreCase("HKD"))
             {
-                toValue=fromValue*5.06;
+                toValue=fromValue*5.59;
             }
             if(fromUnit.equalsIgnoreCase("HKD")&& toUnit.equalsIgnoreCase("AUD"))
             {
-                toValue=fromValue/5.33;
+                toValue=fromValue/5.13;
 
             } else if (fromUnit.equalsIgnoreCase("AUD")&& toUnit.equalsIgnoreCase("HKD"))
             {
-                toValue=fromValue*5.33;
+                toValue=fromValue*5.13;
             }
             if(fromUnit.equalsIgnoreCase("HKD")&& toUnit.equalsIgnoreCase("SGD"))
             {
-                toValue=fromValue/6.03;
+                toValue=fromValue/5.88;
 
             } else if (fromUnit.equalsIgnoreCase("SGD")&& toUnit.equalsIgnoreCase("HKD"))
             {
-                toValue=fromValue*6.03;
+                toValue=fromValue*5.88;
             }
             if(fromUnit.equalsIgnoreCase("HKD")&& toUnit.equalsIgnoreCase("JPY"))
             {
