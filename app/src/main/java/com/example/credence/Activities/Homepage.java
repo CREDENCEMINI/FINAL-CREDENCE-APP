@@ -12,10 +12,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.credence.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Homepage extends AppCompatActivity {
 
     Intent intent;
+    FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+    String userId = user != null ? user.getUid() : null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +47,7 @@ public class Homepage extends AppCompatActivity {
             public void onClick(View view) {
                 intent = new Intent(Homepage.this, FinancialToDoList.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -61,6 +66,7 @@ public class Homepage extends AppCompatActivity {
             public void onClick(View view) {
                 intent = new Intent(Homepage.this, GoalRecPage.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -82,7 +88,16 @@ public class Homepage extends AppCompatActivity {
             }
         });
 
-
+        LinearLayout logout = findViewById(R.id.logout_button);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseAuth.getInstance().signOut();
+                intent =new Intent(Homepage.this, LoginSignupPage.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 }
