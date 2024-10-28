@@ -371,6 +371,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:layout_marginLeft="7dp"
                 android:text="Pay with credit card"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -408,6 +409,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:layout_marginLeft="7dp"
                 android:text="Settings"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -419,7 +421,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
 
-                app:srcCompat="@drawable/baseline_settings_24" />
+                app:srcCompat="@drawable/baseline_settings2_24" />
 
 
         </LinearLayout>
@@ -445,6 +447,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:layout_marginLeft="7dp"
                 android:text="About"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -482,6 +485,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:layout_marginLeft="7dp"
                 android:text="Get Help"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -519,6 +523,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:layout_marginLeft="7dp"
                 android:text="Language"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -556,6 +561,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:layout_marginLeft="7dp"
                 android:text="QR Code"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -593,6 +599,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:layout_marginLeft="7dp"
                 android:text="Adavanced"
                 android:textColor="@color/white"
                 android:textSize="25sp"
