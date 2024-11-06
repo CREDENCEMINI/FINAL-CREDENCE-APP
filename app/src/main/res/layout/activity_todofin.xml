@@ -111,6 +111,7 @@
                         android:layout_marginBottom="8dp"
                         android:background="@drawable/whitenew_background"
                         android:ems="10"
+                        android:fontFamily="@font/bellota_text_bold"
                         android:paddingStart="16dp"
                         android:text="\n\nCreate a monthly budget\nTrack daily expenses
 \nSet savings goals\nAllocate funds for emergency savings"
@@ -136,6 +137,7 @@
                         android:layout_marginBottom="8dp"
                         android:background="@drawable/whitenew_background"
                         android:ems="10"
+                        android:fontFamily="@font/bellota_text_bold"
                         android:paddingStart="16dp"
                         android:text="\n\nReview stock portfolio
 \nContribute to retirement funds (e.g., 401k, mutual funds)
@@ -164,6 +166,7 @@
                         android:layout_marginBottom="8dp"
                         android:background="@drawable/whitenew_background"
                         android:ems="10"
+                        android:fontFamily="@font/bellota_text_bold"
                         android:paddingStart="16dp"
                         android:text="\n\nPay rent/mortgage\nPay utility bills (electricity, water, internet)
 \nSchedule credit card payments
@@ -191,6 +194,8 @@
                         android:layout_marginBottom="8dp"
                         android:background="@drawable/whitenew_background"
                         android:ems="10"
+
+                        android:fontFamily="@font/bellota_text_bold"
                         android:paddingStart="16dp"
                         android:text="\n\nSave for an emergency fund (3-6 months of expenses)
 \nPlan savings for large purchases (vacation, car, home)
@@ -221,6 +226,7 @@
                         android:layout_marginBottom="8dp"
                         android:background="@drawable/whitenew_background"
                         android:ems="10"
+                        android:fontFamily="@font/bellota_text_bold"
                         android:paddingStart="16dp"
                         android:text="\n\nEstimate quarterly taxes (if self-employed)
 \nOrganize tax documents (receipts, statements)

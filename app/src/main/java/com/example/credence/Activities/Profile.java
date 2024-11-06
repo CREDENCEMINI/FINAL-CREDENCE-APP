@@ -26,7 +26,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class Profile extends AppCompatActivity {
     private Button B7;
     // Declare your TextViews
-    private TextView nameTextView, emailTextView, phoneTextView, totalBalance;
+    private TextView nameTextView, emailTextView, phoneTextView, nameTextView2;
     private DatabaseReference databaseReference;
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
     String userId = user != null ? user.getUid() : null;
@@ -43,7 +43,8 @@ public class Profile extends AppCompatActivity {
         B7=findViewById(R.id.B7);// Replace with your layout file
 
         // Initialize your TextViews
-        nameTextView = findViewById(R.id.profilename); // Replace with actual IDs
+        nameTextView = findViewById(R.id.profilename);
+        nameTextView2 = findViewById(R.id.profilename2);// Replace with actual IDs
         emailTextView = findViewById(R.id.profileEmail);
         phoneTextView = findViewById(R.id.profilePhone);
          // Adjust if necessary
@@ -83,6 +84,7 @@ public class Profile extends AppCompatActivity {
 
                         // Update UI
                         nameTextView.setText(name != null ? name : "N/A");
+                        nameTextView2.setText(name != null ? name : "N/A");
                         emailTextView.setText(email != null ? email : "N/A");
                         phoneTextView.setText(phone != null ? phone : "N/A");
 

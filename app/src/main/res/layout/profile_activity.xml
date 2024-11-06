@@ -5,7 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="0dp"
-    android:fillViewport="true">
+    android:visibility="visible"
+    tools:context=".Activities.Profile"
+    tools:visibility="visible"
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -39,7 +42,7 @@
                 tools:layout_editor_absoluteY="-11dp" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/profilename2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/alex_brush"
@@ -95,8 +98,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout2"
             android:layout_width="300dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/transparent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.54"
@@ -114,8 +117,8 @@
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
@@ -125,8 +128,8 @@
 
                 <ImageView
                     android:id="@+id/imageView7"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
@@ -134,8 +137,8 @@
 
                 <ImageView
                     android:id="@+id/imageView8"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/baseline_language_24" />
@@ -146,8 +149,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout3"
             android:layout_width="300dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="140dp"
             android:background="@drawable/transparent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.54"
@@ -168,8 +171,8 @@
 
                 <ImageView
                     android:id="@+id/logo1"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
@@ -179,8 +182,8 @@
 
                 <ImageView
                     android:id="@+id/logo2"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginRight="10dp"
                     android:layout_weight="1"
@@ -188,8 +191,8 @@
 
                 <ImageView
                     android:id="@+id/logo3"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/baseline_currency_bitcoin_24" />
@@ -221,12 +224,13 @@
                 android:id="@+id/profilename"
                 android:layout_width="400dp"
                 android:layout_height="50dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/aclonica"
                 android:gravity="center|left"
                 android:text="NAME"
                 android:textAllCaps="true"
-                android:textColor="@color/white"
+                android:textColor="@color/material_dynamic_tertiary10"
                 android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -270,12 +274,12 @@
                 android:id="@+id/profileEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="2dp"
                 android:fontFamily="@font/aclonica"
                 android:gravity="center|left"
                 android:text="EMAIL"
-                android:textColor="@color/white"
+                android:textColor="@color/material_dynamic_tertiary10"
                 android:textSize="17sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -293,7 +297,7 @@
                 android:fontFamily="@font/aclonica"
                 android:gravity="center|left"
                 android:text="PHONE NUMBER"
-                android:textColor="@color/white"
+                android:textColor="@color/material_dynamic_tertiary10"
                 android:textSize="17sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -330,14 +334,14 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_width="282dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="28dp"
             android:layout_weight="1"
             android:background="@drawable/darkblue"
             android:textColorHint="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
@@ -346,8 +350,10 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/league_spartan_thin"
                 android:hint="Enter you Address"
-                android:textSize="17sp"
-                tools:textColor="@color/white" />
+                android:textColorHint="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:textColor="@color/material_dynamic_primary10" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
@@ -355,7 +361,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="900dp"
+            android:layout_marginTop="800dp"
             android:layout_marginBottom="50dp"
             android:background="@drawable/mastercard"
             android:orientation="horizontal"
@@ -370,8 +376,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_marginLeft="7dp"
+                android:layout_weight="1"
                 android:text="Pay with credit card"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -393,11 +399,9 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="1000dp"
-            android:layout_marginBottom="1000dp"
+            android:layout_marginTop="800dp"
             android:background="@drawable/mastercard"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.585"
             app:layout_constraintStart_toStartOf="parent"
@@ -408,8 +412,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_marginLeft="7dp"
+                android:layout_weight="1"
                 android:text="Settings"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -431,6 +435,7 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="900dp"
             android:background="@drawable/mastercard"
             android:orientation="horizontal"
@@ -439,15 +444,15 @@
             app:layout_constraintHorizontal_bias="0.585"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintVertical_bias="0.192">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_marginLeft="7dp"
+                android:layout_weight="1"
                 android:text="About"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -469,23 +474,21 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="800dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/mastercard"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.585"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_marginLeft="7dp"
+                android:layout_weight="1"
                 android:text="Get Help"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -507,23 +510,21 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="700dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/mastercard"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.585"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_marginLeft="7dp"
+                android:layout_weight="1"
                 android:text="Language"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -545,23 +546,21 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="600dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/mastercard"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.585"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_marginLeft="7dp"
+                android:layout_weight="1"
                 android:text="QR Code"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -583,23 +582,21 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="500dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/mastercard"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.585"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_marginLeft="7dp"
+                android:layout_weight="1"
                 android:text="Adavanced"
                 android:textColor="@color/white"
                 android:textSize="25sp"
@@ -621,7 +618,9 @@
             android:layout_width="200dp"
             android:layout_height="70dp"
             android:layout_marginTop="50dp"
+            android:src="@drawable/bluenew_background"
             android:text="LOGOUT"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />

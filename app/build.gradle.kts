@@ -50,6 +50,7 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation("androidx.navigation:navigation-compose:2.8.1")
+    implementation("androidx.appcompat:appcompat:1.6.0")
     // Import the BoM for the Firebase platform
     implementation(platform("com.google.firebase:firebase-bom:33.3.0"))
     implementation("com.google.firebase:firebase-database:21.0.0")

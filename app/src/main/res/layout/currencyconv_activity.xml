@@ -86,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="80dp"
         android:text="Currency\nConverter"
         android:textColor="#ffffff"
         android:textSize="27sp"
@@ -129,7 +129,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="64dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginEnd="24dp"
                     android:layout_marginBottom="40dp"
                     android:background="@drawable/chandu_background"
@@ -150,17 +150,28 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="40dp"
+                        android:layout_marginTop="30dp"
                         android:orientation="horizontal"
                         android:weightSum="2">
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_weight="1"
+                            android:text="From:"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"/>
+
 
                         <EditText
                             android:id="@+id/fromValue"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_marginStart="32dp"
-
-                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="-55dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="150dp"
                             android:background="@drawable/whitenew_background"
                             android:ems="10"
                             android:hint="Enter Here"
@@ -170,14 +181,18 @@
                             android:textColorHint="#808080"
                             android:textSize="16dp" />
 
+
                         <Spinner
                             android:id="@+id/fromUnit"
-                            android:layout_width="80dp"
+                            android:layout_width="-50dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
-                            android:layout_marginEnd="1dp"
+                            android:layout_marginStart="-230dp"
+                            android:layout_marginEnd="40dp"
+
+
                             android:layout_weight="1"
                             android:background="@drawable/blueshade_background" />
+
                     </LinearLayout>
 
 
@@ -187,13 +202,24 @@
                         android:layout_marginTop="20dp"
                         android:orientation="horizontal"
                         android:weightSum="2">
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="40dp"
+                            android:layout_weight="1"
+                            android:text="To:"
+                            android:textColor="@color/white"
+                            android:textSize="18dp"/>
 
                         <EditText
                             android:id="@+id/toValue"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginStart="-40dp"
                             android:layout_marginBottom="8dp"
+                            android:layout_marginEnd="140dp"
                             android:background="@drawable/whitenew_background"
                             android:ems="10"
                             android:focusable="false"
@@ -206,9 +232,10 @@
 
                         <Spinner
                             android:id="@+id/toUnit"
-                            android:layout_width="80dp"
+                            android:layout_width="-50dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginStart="-220dp"
                             android:layout_weight="1"
                             android:background="@drawable/blueshade_background" />
                     </LinearLayout>
