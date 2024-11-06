@@ -2,45 +2,26 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newbackgrond_main"
+    android:background="@drawable/purple_background"
     tools:context=".Activities.IncomeTaxActivity">
 
-    <TextView
-        android:id="@+id/profilename"
+    <!-- New parent ConstraintLayout to contain all the elements -->
+    <ImageView
+        android:id="@+id/imageView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="500dp"
-        android:fontFamily="sans-serif-condensed-light"
-        android:gravity="center"
-        android:text="TAX CALCULATOR"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        android:textStyle="bold"
+        android:layout_marginBottom="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/crad_logo" />
+        app:srcCompat="@drawable/top_arc" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="500dp"
@@ -50,115 +31,110 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bottom_arc" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/innerLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="250dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/top_arc" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:layout_marginTop="250dp"
-        android:orientation="vertical"
-        android:padding="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/pink_layout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="0dp"
-            android:background="@drawable/pink_layout">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="TAX CALCULATOR"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/labelIncome"
-                android:layout_width="300dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
-                android:text="Enter Your Annual Income"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="23sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/incomeInput"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_button_white"
+            android:gravity="center"
+            android:hint="Annual Income"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView" />
 
-            <EditText
-                android:id="@+id/incomeInput"
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="12dp"
-                android:background="@drawable/background_button_white"
-                android:gravity="center"
-                android:hint="Annual Income"
-                android:inputType="numberDecimal"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textColorHint="#808080"
-                android:textSize="18dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.506"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/labelIncome" />
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_button_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/incomeInput" />
 
-            <Button
-                android:id="@+id/calculateButton"
-                android:layout_width="200dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/bluenew_background"
-                android:text="Calculate Tax"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/incomeInput" />
+        <Spinner
+            android:id="@+id/ageGroupSpinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_button_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/genderSpinner" />
 
-            <TextView
+        <Spinner
+            android:id="@+id/deductionSpinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_button_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ageGroupSpinner" />
 
-                android:id="@+id/labelIncom"
-                android:layout_width="300dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="250dp"
-                android:gravity="center"
-                android:text="Income tax"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="25dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bluenew_background"
+            android:text="Calculate Tax"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/deductionSpinner" />
 
+        <TextView
+            android:id="@+id/taxOutput"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/background_button_white"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/calculateButton" />
 
-            <TextView
-                android:id="@+id/taxOutput"
-                android:layout_width="250dp"
-                android:layout_height="60dp"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/background_button_white"
-                android:gravity="center"
-
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="18dp"
-
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/calculateButton" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
