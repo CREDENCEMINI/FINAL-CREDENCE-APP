@@ -13,4 +13,8 @@
         <item>Investment</item>
         <item>Other</item>
     </string-array>
+    <string-array name="gains_period">
+        <item>Short-term</item>
+        <item>Long-term</item>
+    </string-array>
 </resources>

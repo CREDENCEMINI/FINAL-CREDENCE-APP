@@ -5,11 +5,11 @@
     android:id="@+id/main_capital_gains"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newbackgrond_main"
+    android:background="@drawable/purple_background"
     tools:context=".Activities.CapitalGainsActivity">
 
     <TextView
-        android:id="@+id/profilename"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/crad_logo" />
+        app:srcCompat="@drawable/c" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -97,7 +97,7 @@
             <EditText
                 android:id="@+id/capitalGainsInput"
                 android:layout_width="300dp"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="12dp"
                 android:background="@drawable/background_button_white"
                 android:gravity="center"
@@ -106,7 +106,7 @@
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textColorHint="#808080"
-                android:textSize="18dp"
+                android:textSize="28dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.506"
                 app:layout_constraintStart_toStartOf="parent"
@@ -116,8 +116,10 @@
                 android:id="@+id/calculateCapitalGainsButton"
                 android:layout_width="200dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="100dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bluenew_background"
+                android:gravity="center"
                 android:text="Calculate Tax"
                 android:textColor="@color/white"
                 android:textSize="20dp"
@@ -127,31 +129,46 @@
 
             <TextView
                 android:id="@+id/labelCapitalGainsTax"
-                android:layout_width="300dp"
+                android:layout_width="wrap_content"
                 android:layout_height="70dp"
-                android:layout_marginTop="240dp"
+                android:layout_marginTop="100dp"
                 android:gravity="center"
                 android:text="Capital Gains Tax"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.669" />
 
             <TextView
                 android:id="@+id/capitalGainsTaxOutput"
-                android:layout_width="250dp"
-                android:layout_height="60dp"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="60dp"
                 android:background="@drawable/background_button_white"
                 android:gravity="center"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="18dp"
+                android:textSize="23dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/calculateCapitalGainsButton" />
+
+            <Spinner
+                android:id="@+id/period"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:background="@drawable/background_button_white"
+                app:layout_constraintBottom_toTopOf="@+id/labelCapitalGainsTax"
+                app:layout_constraintEnd_toStartOf="@+id/calculateCapitalGainsButton"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/capitalGainsInput"
+                app:layout_constraintVertical_bias="0.666" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
